@@ -3,7 +3,7 @@ def has_negatives(a):
     YOUR CODE HERE
     """
     # create a dictionary
-    d = {}
+    d = dict()
     # loop through the list
     for value in a:        
         # check to see if the value is positive
@@ -17,9 +17,11 @@ def has_negatives(a):
     # loop through the inverse of the list
     a = [-1*(value) for value in a]
     for value in a:
+        # if the inverted value is in our dictionary
         if value in d:
+            # add it to our list
             result.append(value)
-
+    # return the list
     return result
 
 
