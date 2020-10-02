@@ -33,7 +33,6 @@ def finder(files, queries):
             for path in d[querie]:
                 result.append(path)
 
-    print(d)
     return result
 
 
